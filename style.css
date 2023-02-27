@@ -1,0 +1,267 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+/* css variables */
+.root{
+    --navbar-height: 59px
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgb(29 29 29);
+    /* background-color: black; */
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    opacity: .4;
+    z-index: -1;
+
+}
+/* .item{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+} */
+/* Navigation bar: Logo and Image */
+#logo{
+    margin: 10px 30px;
+}
+
+#logo img{
+    height: 100px;
+    width: 95px;
+    color: white;
+}
+
+/* Navigation bar: List styling */
+
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+    /* margin: 10px; */
+    /* background-color: black; */
+    /* color: white; */
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    /* background: black; */
+}
+#navbar ul li a:hover{
+    
+    color: black;
+    background: white;
+    box-shadow: 2px 2px 2px 2px rgb(175, 172, 172);
+    transition: all .4s;
+    /* font-size: 1.335rem; */
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px ;
+    height: 730px;
+}
+#home::before{
+    content: "";
+    background: url(../img/bg2.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;        
+    opacity: .89;
+    z-index: -1;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -180px;
+}
+#home p{
+    position: relative;
+    top: -100px;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+
+/* Services section */
+
+
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 23px;
+    background-color: rgb(230 230 230);
+    
+}
+#services .box img{
+    height: 160px;
+    display: block ;
+    margin: auto;
+    border-radius: 6px;   
+    
+}
+
+.services-container h1{
+    margin-top: 30px;
+
+}
+
+/* client section */
+
+
+
+#client-section{
+    height: 344px;
+    /* position: relative; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/img/bg.jpg);
+    width: 100%;
+    height: 41.2%;
+    z-index: -1;
+    opacity: 0.76;
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#client img{
+    height: 100px;
+    cursor: pointer;
+}
+
+/* contact section */
+
+#contact{
+    position: relative;
+    font-size: 1.3rem;
+}
+
+#contact::before{
+    position: absolute;
+    content: "";
+    background: url(/img/contact.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+#contact-box input{
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width: 40%;
+}
+.submit{
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 200px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: gray;
+    box-shadow: .5px .5px 20px 5px white;
+    color: white;
+    transition: all .5s;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+
+#h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 3px 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color:rgb(229, 221, 206);
+    cursor: pointer;
+    margin: 18px;
+    position: relative;
+    top: 30px;
+
+}
+/* something interesting to watch */
+.btn:hover{
+    background-color: gray;
+    box-shadow: .5px .5px 20px 7px white;
+    color: white;
+    transition: all .5s;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
+
