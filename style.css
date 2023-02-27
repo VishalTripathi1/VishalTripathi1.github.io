@@ -80,7 +80,7 @@
     justify-content: center;
     align-items: center;
     padding: 3px 200px ;
-    height: 730px;
+    height: 680px;
 }
 #home::before{
     content: "";
